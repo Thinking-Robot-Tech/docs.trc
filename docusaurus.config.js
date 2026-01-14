@@ -38,8 +38,8 @@ const config = {
         color: '#FFE66D',
       },
       {
-        id: 'Embedded',
-        title: '🔧 Embedded Systems',
+        id: 'embedded',
+        title: '🔧 embedded Systems',
         description: 'Deep dive into embedded programming. Learn C/C++ for microcontrollers and real-time systems.',
         image: '/img/courses/embedded-cover.png',
         color: '#95E1D3',
@@ -137,9 +137,9 @@ onBrokenLinks: 'warn',   // Allows deployment with warnings
         [
       "@docusaurus/plugin-content-docs",
       {
-        id: "Embedded",
+        id: "embedded",
         path: "content/embedded-course",
-        routeBasePath: "Embedded",
+        routeBasePath: "embedded",
         sidebarPath: "./sidebarsEmbedded.js",
       },
     ],
@@ -194,7 +194,7 @@ onBrokenLinks: 'warn',   // Allows deployment with warnings
           {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
-            docsPluginId: "Embedded",
+            docsPluginId: "embedded",
             position: "left",
             label: "Embedded Course",
           },
