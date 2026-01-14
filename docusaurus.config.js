@@ -12,7 +12,48 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config = {
   title: "My Site",
   tagline: "Dinosaurs are cool",
-  favicon: "img/favicon.ico",
+  favicon: "img/logo.ico",
+
+    customFields: {
+    courses: [
+      {
+        id: 'projects',
+        title: '🚀 IoT Projects',
+        description: 'Build real-world IoT projects with ESP32. Smart home automation, plant monitoring, and more hands-on projects.',
+        image: '/img/courses/projects-cover.png',  // Add your image here
+        color: '#FF6B6B',
+      },
+      {
+        id: 'arduino',
+        title: '⚡ Arduino Course',
+        description: 'Complete Arduino tutorial from basics to advanced. Learn sensors, actuators, and build amazing projects.',
+        image: '/img/courses/arduino-cover.png',
+        color: '#4ECDC4',
+      },
+      {
+        id: 'esp32',
+        title: '📡 ESP32 Course',
+        description: 'Master ESP32 microcontroller with WiFi & Bluetooth. IoT projects, web servers, and wireless communication.',
+        image: '/img/courses/esp32-cover.png',
+        color: '#FFE66D',
+      },
+      {
+        id: 'Embedded',
+        title: '🔧 Embedded Systems',
+        description: 'Deep dive into embedded programming. Learn C/C++ for microcontrollers and real-time systems.',
+        image: '/img/courses/embedded-cover.png',
+        color: '#95E1D3',
+      },
+      {
+        id: 'python',
+        title: '🐍 Python Course',
+        description: 'Python programming for IoT and automation. Learn data processing, APIs, and hardware control.',
+        image: '/img/courses/python-cover.png',
+        color: '#A8E6CF',
+      },
+    ],
+  },
+
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -122,10 +163,10 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: "My Site",
+        title: "TRC Docs",
         logo: {
-          alt: "My Site Logo",
-          src: "img/logo.svg",
+          alt: "Thinking Robot Logo",
+          src: "img/logo.png",
         },
         items: [
           {
