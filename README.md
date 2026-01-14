@@ -1,41 +1,38 @@
-# Website
+# 📚 How to Add a New Course / Parent Directory
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This guide explains how to add a new top-level category (e.g., a new "STM32 Course" or "Robotics Kit") to the documentation site.
 
-## Installation
+There are **two main parts** to this process: updating the configuration and creating the file structure.
 
-```bash
-yarn
-```
+---
 
-## Local Development
+## 🛠️ Step 1: Update `config.js`
 
-```bash
-yarn start
-```
+Open `config.js` in the root directory. You need to replicate the existing setup for Arduino or ESP32.
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+**Perform these 2 changes:**
 
-## Build
+1.  **Copy/Paste the Navigation Entry:** Find the navigation array and duplicate the existing block.
+2.  **Copy/Paste the Sidebar Reference:** Ensure the config knows where to find the sidebar for this new course.
 
-```bash
-yarn build
-```
+### Example Code Snippet
+```javascript
+// Inside config.js
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+// 1. Add to Navigation (Navbar)
+nav: [
+    { text: 'Arduino Course', link: '/arduino/intro' }, 
+    { text: 'ESP32 Course', link: '/esp32/intro' },
+    
+    // 👇 ADD YOUR NEW COURSE HERE
+    { text: 'New Course Name', link: '/new-folder-name/intro' }, 
+],
 
-## Deployment
+// 2. Add Sidebar Configuration
+sidebar: {
+    '/arduino/': arduinoSidebar,
+    '/esp32/': esp32Sidebar,
 
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+    // 👇 ADD YOUR NEW SIDEBAR REFERENCE HERE
+    '/new-folder-name/': newCourseSidebar, 
+}
