@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Getting Started
 
 ### 1. Introduction
@@ -11,7 +15,7 @@ Using the **ESP8266** (a WiFi-capable computer) as the brain, we will monitor th
 **Why is this project special?**
 Most DIY kits only handle one plant. This kit teaches you how to manage **multiple sensors** and distribute water to a **cluster of plants** using a single pump—just like a real automated greenhouse!
 
-![image.png](assets/im1.png)
+![im1](image1.png)
 
 ---
 
@@ -26,9 +30,12 @@ By the end of this guide, you will have a fully working system and, more importa
 
 ---
 
-:::info Purchase Link
-✅ If you want to Purchase This kit → Visit : [Thinking Robot Store](https://thinkingrobot.in/product/smart-plant-monitoring-and-watering-kit-esp8266-automated-gardening-system/)
-:::
+<aside>
+✅
+
+If you want to Purchase This kit → Visit : https://thinkingrobot.in/product/smart-plant-monitoring-and-watering-kit-esp8266-automated-gardening-system/
+
+</aside>
 
 ### 3. Bill of Materials (What's in the Box?)
 
