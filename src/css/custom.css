@@ -1,30 +1,32 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Any CSS included here will be global.
  */
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* --- Default (Light Mode) Variables --- */
+  --ifm-color-primary: #00a8ff;
+  --ifm-color-primary-dark: #0097e6;
+  
+  /* Tech Theme: Light Mode */
+  --tech-bg: #f8f9fa;             /* Light Grayish White */
+  --tech-grid-line: rgba(0, 0, 0, 0.05); /* Faint dark lines */
+  --tech-card-bg: #ffffff;        /* White Cards */
+  --tech-card-border: rgba(0, 0, 0, 0.1);
+  --tech-text-title: #1c1e21;     /* Dark Black text */
+  --tech-text-desc: #606770;      /* Dark Gray text */
+  --tech-hero-glow: rgba(0, 168, 255, 0.15);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* --- Dark Mode Variables --- */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #00d2ff;
+  
+  /* Tech Theme: Dark Mode */
+  --tech-bg: #050a14;             /* Deep Space Blue */
+  --tech-grid-line: rgba(0, 168, 255, 0.07); /* Cyan lines */
+  --tech-card-bg: rgba(18, 25, 38, 0.8); /* Glassy Dark */
+  --tech-card-border: rgba(255, 255, 255, 0.08);
+  --tech-text-title: #ffffff;     /* White text */
+  --tech-text-desc: #b0c4de;      /* Light Blue-Gray text */
+  --tech-hero-glow: rgba(0, 168, 255, 0.4);
 }
