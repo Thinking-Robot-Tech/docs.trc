@@ -2,41 +2,27 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
+import HomepageFeatures from '@site/src/components/HomepageFeatures';
+
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
-function CourseCard({id, title, description, image, color}) {
-  return (
-    <div className={styles.courseCard}>
-      {image && (
-        <div className={styles.cardImage} style={{borderBottom: `4px solid ${color}`}}>
-          <img src={image} alt={title} />
-        </div>
-      )}
-      <div className={styles.cardContent}>
-        <h3 style={{color: color}}>{title}</h3>
-        <p>{description}</p>
-        <Link
-          className="button button--primary button--lg"
-          to={`/${id}/intro`}
-          style={{backgroundColor: color, borderColor: color}}>
-          Start Learning →
-        </Link>
-      </div>
-    </div>
-  );
-}
-
 function HomepageHeader() {
+  const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero', styles.heroBanner)}>
+    <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className={styles.heroTitle}>
-          Welcome to Thinking Robot 🤖
+        <Heading as="h1" className="hero__title">
+          {siteConfig.title}
         </Heading>
-        <p className={styles.heroTagline}>
-          Learn IoT, Robotics & Embedded Systems through hands-on projects
-        </p>
+        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to="/projects/intro">
+            Docusaurus Tutorial - 5min ⏱️
+          </Link>
+        </div>
       </div>
     </header>
   );
@@ -44,23 +30,13 @@ function HomepageHeader() {
 
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
-  const courses = siteConfig.customFields.courses;
-  
   return (
     <Layout
-      title="Home"
-      description="Learn IoT, Robotics & Embedded Systems">
+      title={`Hello from ${siteConfig.title}`}
+      description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-        <section className={styles.coursesSection}>
-          <div className="container">
-            <div className={styles.courseGrid}>
-              {courses.map((course, idx) => (
-                <CourseCard key={idx} {...course} />
-              ))}
-            </div>
-          </div>
-        </section>
+        <HomepageFeatures />
       </main>
     </Layout>
   );
