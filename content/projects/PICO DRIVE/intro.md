@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: Introduction to Electronics & Robotics
-slug: /intro
+slug: /PICO DRIVE Intro
 ---
 
 # 🤖 Welcome to Thinking Robot

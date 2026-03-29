@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: Introduction to Electronics & Robotics
-slug: /intro
+slug: /Smart Home Intro
 ---
 
 # 🤖 Welcome to Thinking Robot
@@ -14,7 +14,7 @@ This documentation is your **starting point** to understand everything behind Th
 
 ---
 
-![Thinking Robot Setup](https://res.cloudinary.com/drwys1ksu/image/upload/v1771139493/Gemini_Generated_Image_czv3p5czv3p5czv3_qviwin.png)
+![Thinking Robot Setup](https://images.unsplash.com/photo-1581091215367-59ab6b3c0c4c)
 
 ---
 

@@ -10,7 +10,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
+  title: "Learning Hub",
   tagline: "Dinosaurs are cool",
   favicon: "img/logo.ico",
 
@@ -163,7 +163,7 @@ onBrokenLinks: 'warn',   // Allows deployment with warnings
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: "TRC Docs",
+        title: "Thinking Robot Docs",
         logo: {
           alt: "Thinking Robot Logo",
           src: "img/logo.png",

@@ -48,7 +48,7 @@ Before we start building, let's make sure you have all the correct parts on your
 | **Relemate Connectors** | 3 | Long wires to connect the sensors to your breadboard. |
 | **Mini Water Pump** | 1 | Submersible pump to water the plants. |
 | **3-Way Distribution Pipe** | 1 | A special tube with 3 open ends to water multiple pots at once. |
-| **Relay / MOSFET Module** | 1 | An electric "Switch" that lets the small ESP8266 control the big pump. |
+| **2N2222A Transistor** | 1 | An electric "Switch" that lets the small ESP8266 control the big pump. |
 | **DHT11 Sensor** | 1 | Measures the air temperature and humidity. |
 | **Breadboard** | 1 | The base for building your circuit. |
 | **Power Supply Module** | 1 | plugs into the breadboard to provide clean 3.3V and 5V power. |
