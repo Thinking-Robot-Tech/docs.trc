@@ -10,8 +10,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Learning Hub",
-  tagline: "Dinosaurs are cool",
+  title: "Thinking Robot Learning Hub",
+  tagline: "Learn, Build, and Innovate with our Robotics and IoT Kits",
   favicon: "img/logo.ico",
 
     customFields: {
@@ -61,7 +61,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://docs.thinkingrobot.in",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -92,21 +92,7 @@ onBrokenLinks: 'warn',   // Allows deployment with warnings
           routeBasePath: "projects",
           sidebarPath: "./sidebars.js",
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ["rss", "atom"],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-          // Useful options to enforce blogging best practices
-          onInlineTags: "warn",
-          onInlineAuthors: "warn",
-          onUntruncatedBlogPosts: "warn",
-        },
+        blog: false,
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -207,10 +193,9 @@ onBrokenLinks: 'warn',   // Allows deployment with warnings
             label: "Python Course",
           },
 
-          { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
+            href: "https://thinkingrobot.in/",
+            label: "Shop Now",
             position: "right",
           },
         ],
@@ -222,43 +207,76 @@ onBrokenLinks: 'warn',   // Allows deployment with warnings
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
+                label: "Projects & Tutorials",
                 to: "/projects/intro",
               },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                label: "Arduino Course",
+                to: "/arduino",
               },
               {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "X",
-                href: "https://x.com/docusaurus",
+                label: "ESP32 Course",
+                to: "/esp32",
               },
             ],
           },
           {
-            title: "More",
+            title: "Kits & Products",
             items: [
               {
-                label: "Blog",
-                to: "/blog",
+                label: "Pico Bot 4 Wheel Kit",
+                href: "https://thinkingrobot.in/products/pico-bot-4-wheel-robot-with-esp32-edition-thinking-robot-modular-robotics-kit",
               },
               {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                label: "IoT Kit for Beginners",
+                href: "https://thinkingrobot.in/products/iot-kit-for-beginners-esp32-wireless-development-kit-thinking-robot-complete-starter-pack",
+              },
+              {
+                label: "Smart Plant Monitoring Kit",
+                href: "https://thinkingrobot.in/products/smart-plant-monitoring-and-watering-kit-esp8266-automated-gardening-system",
+              },
+              {
+                label: "Mini Arduino Starter Kit",
+                href: "https://thinkingrobot.in/products/mini-arduino-starter-kit-thinking-robot-compact-beginner-pack",
+              },
+            ],
+          },
+          {
+            title: "Thinking Robot",
+            items: [
+              {
+                label: "Official Store",
+                href: "https://thinkingrobot.in/",
+              },
+              {
+                label: "Contact Us",
+                href: "https://thinkingrobot.in/contact",
+              },
+            ],
+          },
+          {
+            title: "Legal & Info",
+            items: [
+              {
+                label: "About Us",
+                href: "https://thinkingrobot.in/about-trc",
+              },
+              {
+                label: "Privacy Policy",
+                href: "https://thinkingrobot.in/privacy-and-policy",
+              },
+              {
+                label: "Return Policy",
+                href: "https://thinkingrobot.in/return-policy",
+              },
+              {
+                label: "Terms & Conditions",
+                href: "https://thinkingrobot.in/terms-and-conditions",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Thinking Robot. All rights reserved.`,
       },
       prism: {
         theme: prismThemes.github,

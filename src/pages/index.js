@@ -55,9 +55,9 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--secondary button--lg"
-            to="/blog"
+            to="https://lab.thinkingrobot.in/"
             style={{padding: '0.8rem 2rem'}}>
-            Read Blog
+            Block Coding Lab
           </Link>
         </div>
       </div>
